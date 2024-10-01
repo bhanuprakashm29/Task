@@ -1,0 +1,12 @@
+Started by upstream project "[8mha:////4NbxhdM1dZ2mJg32toirkX3jY3cAkSjDCfNgFgxdDfp5AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2U1Nx8Q30AMCogZMAAAAA=[0mdemo1" build number [8mha:////4K6NXwJa9wuhml+zq6bN2+bd7mlVqn6VFUUI/IwFyZgQAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBh79rPwk/ZTU3HxDfXMA2xBA5cEAAAA=[0m7
+originally caused by:
+ Started by timer
+Started by upstream project "[8mha:////4NbxhdM1dZ2mJg32toirkX3jY3cAkSjDCfNgFgxdDfp5AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2U1Nx8Q30AMCogZMAAAAA=[0mdemo1" build number [8mha:////4K6NXwJa9wuhml+zq6bN2+bd7mlVqn6VFUUI/IwFyZgQAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBh79rPwk/ZTU3HxDfXMA2xBA5cEAAAA=[0m7
+originally caused by:
+ Started by timer
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/demo2
+[demo2] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins9513001187499787319.sh
++ echo helloworld
+helloworld
+Finished: SUCCESS

@@ -1,0 +1,8 @@
+Started by user [8mha:////4Bux6RvTmNQTNnUnfY+nqLyKERHuXuRkgWO+CU85SQfzAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZh/dLi1CL9pIzEvNKCosTsxOKMXAAOuHh1yAAAAA==[0mmandala bhanuprakash
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/project1
+[project1] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins17733062951797138519.sh
++ echo 'hello world'
+hello world
+Triggering a new build of [8mha:////4M/vr5V9qEMwcep/YE2P/j2dTtNfs45zZSz3TD6jKDzxAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JP2Covys1OQSI30AmS0LBsMAAAA=[0mproject2
+Finished: SUCCESS

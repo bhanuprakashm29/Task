@@ -1,0 +1,35 @@
+Started by user [8mha:////4Bux6RvTmNQTNnUnfY+nqLyKERHuXuRkgWO+CU85SQfzAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZh/dLi1CL9pIzEvNKCosTsxOKMXAAOuHh1yAAAAA==[0mmandala bhanuprakash
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/code
+The recommended git tool is: NONE
+using credential bhanuprakashm
+Cloning the remote Git repository
+Cloning repository https://github.com/bhanuprakashm29/code.git
+ > git init /Users/admin/.jenkins/workspace/code # timeout=10
+Fetching upstream changes from https://github.com/bhanuprakashm29/code.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1 (Apple Git-137.1)'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git fetch --tags --force --progress -- https://github.com/bhanuprakashm29/code.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/bhanuprakashm29/code.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision 84ab04320befdf2c590ce0b04d120736fd778d05 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 84ab04320befdf2c590ce0b04d120736fd778d05 # timeout=10
+Commit message: "new file"
+First time build. Skipping changelog.
+[code] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins3376506564605867194.sh
++ javac helloworld.java
+helloworld.java:3: error: cannot find symbol
+public static void main(string args[])    
+                        ^
+  symbol:   class string
+  location: class HelloWorld
+helloworld.java:5: error: package system does not exist
+system.out.println("Hello World"); //prints on screen "Hello World"
+      ^
+2 errors
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

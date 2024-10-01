@@ -1,0 +1,23 @@
+Started by user [8mha:////4Bux6RvTmNQTNnUnfY+nqLyKERHuXuRkgWO+CU85SQfzAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZh/dLi1CL9pIzEvNKCosTsxOKMXAAOuHh1yAAAAA==[0mmandala bhanuprakash
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/project3
+The recommended git tool is: NONE
+using credential bhanuprakashm
+ > git rev-parse --resolve-git-dir /Users/admin/.jenkins/workspace/project3/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/fw876/helloworld.git # timeout=10
+Fetching upstream changes from https://github.com/fw876/helloworld.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1 (Apple Git-137.1)'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git fetch --tags --force --progress -- https://github.com/fw876/helloworld.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 293ec12d37a3feed7d39eb9b141f1fcb7faac08f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 293ec12d37a3feed7d39eb9b141f1fcb7faac08f # timeout=10
+Commit message: "hysteria: update to 2.5.1 (#1524)"
+ > git rev-list --no-walk 293ec12d37a3feed7d39eb9b141f1fcb7faac08f # timeout=10
+[project3] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins7527639812339957928.sh
++ echo 'hello world'
+hello world
+Finished: SUCCESS

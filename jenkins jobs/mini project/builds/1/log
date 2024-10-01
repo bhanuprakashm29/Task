@@ -1,0 +1,9 @@
+Started by user [8mha:////4Bux6RvTmNQTNnUnfY+nqLyKERHuXuRkgWO+CU85SQfzAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZh/dLi1CL9pIzEvNKCosTsxOKMXAAOuHh1yAAAAA==[0mmandala bhanuprakash
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/mini project
+[mini project] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins13327393485734293343.sh
++ cd /Users/admin/task2
++ javac HelloWorld.java
++ java HelloWorld
+Hello, World!
+Finished: SUCCESS

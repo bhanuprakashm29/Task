@@ -1,0 +1,8 @@
+Started by timer
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/demo1
+[demo1] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins2122317002064036196.sh
++ echo helloworld
+helloworld
+Triggering a new build of [8mha:////4NKWDP2BWB0SNca4oOPG3P/y6w1kjmOkCZgUMlJZlsdRAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2U1Nx8I30A83kNT8AAAAA=[0mdemo2
+Finished: SUCCESS

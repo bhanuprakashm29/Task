@@ -1,0 +1,87 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1436.vfa_244484591f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3964.v0767b_4b_a_0b_fa_">
+    <script>pipeline {
+    agent any
+
+    environment {
+        DOCKER_CREDENTIALS = credentials(&apos;bhanuprakashm99&apos;) // Reference your credentials ID
+    }
+
+    stages {
+        stage(&apos;Clone Repository&apos;) {
+            steps {
+                git &apos;https://github.com/bhanuprakashm29/java-application.git&apos; // Replace with your repo URL
+            }
+        }
+
+        stage(&apos;Build with Maven&apos;) {
+            steps {
+                script {
+                    sh &apos;mvn clean package -DskipTests&apos; // Adjust as needed
+                }
+            }
+        }
+
+        stage(&apos;Login to Docker Hub&apos;) {
+            steps {
+                script {
+                    sh &apos;echo &quot;$DOCKER_CREDENTIALS_PSW&quot; | docker login -u &quot;$DOCKER_CREDENTIALS_USR&quot; --password-stdin&apos;
+                }
+            }
+        }
+
+        stage(&apos;Build Docker Image&apos;) {
+            steps {
+                script {
+                    sh &apos;docker build -t bhanuprakashm99/java-app .&apos; // Adjust the image name
+                }
+            }
+        }
+
+        stage(&apos;Push Docker Image&apos;) {
+            steps {
+                script {
+                    sh &apos;docker push bhanuprakashm99/java-app&apos; // Adjust as needed
+                }
+            }
+        }
+
+        stage(&apos;Deploy&apos;) {
+            steps {
+                script {
+                    sh &apos;docker run -d -p 8033:8080 bhanuprakashm99/java-app&apos; // Adjust as needed
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo &apos;Cleaning up resources...&apos;
+        }
+        success {
+            echo &apos;Pipeline completed successfully!&apos;
+        }
+        failure {
+            echo &apos;Pipeline failed.&apos;
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,23 @@
+Started by user [8mha:////4Bux6RvTmNQTNnUnfY+nqLyKERHuXuRkgWO+CU85SQfzAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZh/dLi1CL9pIzEvNKCosTsxOKMXAAOuHh1yAAAAA==[0mmandala bhanuprakash
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/demo1
+The recommended git tool is: NONE
+using credential bhanuprakashm29
+ > git rev-parse --resolve-git-dir /Users/admin/.jenkins/workspace/demo1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ChakravarthiKandagaddala/WebProject.git # timeout=10
+Fetching upstream changes from https://github.com/ChakravarthiKandagaddala/WebProject.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1 (Apple Git-137.1)'
+using GIT_ASKPASS to set credentials GitHub-credential
+ > git fetch --tags --force --progress -- https://github.com/ChakravarthiKandagaddala/WebProject.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision fe6d1dbbdd764c36f6cbcf28f277a0e5c74b5ad0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fe6d1dbbdd764c36f6cbcf28f277a0e5c74b5ad0 # timeout=10
+Commit message: "all files for web project"
+First time build. Skipping changelog.
+[demo1] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins333886591551886020.sh
++ echo helloworld
+helloworld
+Finished: SUCCESS

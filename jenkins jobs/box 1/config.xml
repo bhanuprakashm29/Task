@@ -1,0 +1,101 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1436.vfa_244484591f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3964.v0767b_4b_a_0b_fa_">
+    <script>pipeline {
+    agent any
+
+    environment {
+        DOCKER_CREDENTIALS = credentials(&apos;bhanuprakashm99&apos;) // Reference your credentials ID
+        DOCKER_IMAGE = &apos;bhanuprakashm99/hms-web-1&apos;
+        CONTAINER_NAME = &apos;hms-web-container-2&apos; // Name your container for easy reference
+        BASE_PORT = 8300 // Starting port number
+    }
+
+    stages {
+        stage(&apos;Git Cloning&apos;) {
+            steps {
+                git credentialsId: &apos;bhanuprakashm99&apos;, url: &apos;https://github.com/bhanuprakashm29/public.git&apos;
+            }
+        }
+
+        stage(&apos;Login to Docker Hub&apos;) {
+            steps {
+                script {
+                    sh &apos;echo &quot;$DOCKER_CREDENTIALS_PSW&quot; | docker login -u &quot;$DOCKER_CREDENTIALS_USR&quot; --password-stdin&apos;
+                }
+            }
+        }
+
+        stage(&apos;Build Docker Image&apos;) {
+            steps {
+                script {
+                    sh &quot;docker build -t ${DOCKER_IMAGE} .&quot;
+                }
+            }
+        }
+
+        stage(&apos;Push Docker Image&apos;) {
+            steps {
+                script {
+                    sh &quot;docker push ${DOCKER_IMAGE}&quot;
+                }
+            }
+        }
+
+        stage(&apos;Deploy&apos;) {
+            steps {
+                script {
+                    // Stop and remove the existing container if it exists
+                    sh &quot;&quot;&quot;
+                        if [ \$(docker ps -q -f name=${CONTAINER_NAME}) ]; then
+                            docker stop ${CONTAINER_NAME}
+                            docker rm ${CONTAINER_NAME}
+                        fi
+                    &quot;&quot;&quot;
+                    
+                    // Check if the base port is available
+                    def port = BASE_PORT
+                    while (true) {
+                        // Check if the port is in use
+                        def isPortUsed = sh(script: &quot;lsof -i :${port}&quot;, returnStatus: true) == 0
+
+                        if (!isPortUsed) {
+                            break
+                        }
+                        port++
+                    }
+                    
+                    // Run the new container on the available port
+                    sh &quot;docker run -d --name ${CONTAINER_NAME} -p ${port}:80 ${DOCKER_IMAGE}&quot;
+                    echo &quot;New container deployed on port: ${port}&quot;
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Optionally clean up any dangling images
+            script {
+                sh &quot;docker image prune -f&quot;
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,10 @@
+commit 20c95ec521d3dc3933ec7c447300762f9ae9cb93
+tree f2d74502d8a9bf2a1c60d5d36e706e55aa4e10d2
+parent eb7301c3c26bda679f22f2bd04aea54d79e17aaf
+author bhanuprakashm29 <bhanuprakash.m@khyath.com> 2024-09-25 14:20:32 +0530
+committer bhanuprakashm29 <bhanuprakash.m@khyath.com> 2024-09-25 14:20:32 +0530
+
+    file
+
+
+:100644 100644 490d6d52b6f0e6823bd63858d352ba42a2d259b7 1fdb86acbe4c82f93e49b739dc617f5d6517ad16 M	Dockerfile

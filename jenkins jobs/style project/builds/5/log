@@ -1,0 +1,30 @@
+Started by user [8mha:////4Bux6RvTmNQTNnUnfY+nqLyKERHuXuRkgWO+CU85SQfzAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZh/dLi1CL9pIzEvNKCosTsxOKMXAAOuHh1yAAAAA==[0mmandala bhanuprakash
+Running as SYSTEM
+Building on the built-in node in workspace /Users/admin/.jenkins/workspace/style project
+The recommended git tool is: NONE
+Warning: CredentialId "bhanuprakashm" could not be found.
+ > git rev-parse --resolve-git-dir /Users/admin/.jenkins/workspace/style project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/bhanuprakashm29/java-app.git # timeout=10
+Fetching upstream changes from https://github.com/bhanuprakashm29/java-app.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1 (Apple Git-137.1)'
+ > git fetch --tags --force --progress -- https://github.com/bhanuprakashm29/java-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 65111ea6fdffa80cd883b6b2bdd26bd7c84d3d14 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 65111ea6fdffa80cd883b6b2bdd26bd7c84d3d14 # timeout=10
+Commit message: "Delete .idea/workspace.xml"
+ > git rev-list --no-walk 58b6e9f58c42d0f44492faac13841996771dd803 # timeout=10
+[style project] $ /bin/sh -xe /var/folders/jc/n5zhjd3d3dxc8rkllfbw9w700000gq/T/jenkins10180644301424994768.sh
++ docker build -t bhanuprakashm99/java-app:latest .
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2B 0.0s done
+#1 DONE 0.1s
+ERROR: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/pow20jbv9pnzj7ft0qaatsppi
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

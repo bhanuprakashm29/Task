@@ -1,0 +1,125 @@
+commit 24a191cedb8ce45dc07343544a78ef2369c68098
+tree 850efa7c7488ca37d6e223b8422e5c6789c89bef
+parent f14e3d749d984b77f830122f0e86818c927ee91a
+author coolsnowwolf <31687149+coolsnowwolf@users.noreply.github.com> 2024-09-13 10:17:51 +0800
+committer GitHub <noreply@github.com> 2024-09-13 10:17:51 +0800
+
+     xray-core: update to 1.8.24
+
+:100644 100644 447643994b5c2c4e2222240ffe239b4a777392f0 a853ac7bce7616fa3d6089350f8fd8f0c1a5eca5 M	xray-core/Makefile
+commit 1a6f9ebee60d987316b799c470118273f2759c52
+tree 231e4554e16a569e7174b955af15574e21ffac84
+parent 616f5da4c8889be0543786a062365b0cff30668f
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-13 00:01:43 +0800
+committer GitHub <noreply@github.com> 2024-09-13 00:01:43 +0800
+
+    naiveproxy: Update to 128.0.6613.40-3
+
+:100644 100644 92e04f069ca315342b16a2fd453ee8863d1a891d bdb3878d4eb4a482c02ef28b86fbf904fc9d6b64 M	naiveproxy/Makefile
+commit a81b5b39a94f02f3ecdb8fd48004f9de2d1bdcce
+tree 4a4c80de6b5ffb39c5a799d74ca609244ad3455e
+parent d71ea5b4961a44f686de46fa807287867459b9b4
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-08 21:20:57 +0800
+committer GitHub <noreply@github.com> 2024-09-08 21:20:57 +0800
+
+    Fixed a subscription configuration import issue
+    
+    启用 tls 时，无法导入传输协议 ws、httpugrade、HTTP/2、SplitHTTP 路径和 tls 主机名。
+
+:100755 100755 219f06acee1bfb0191b9e394a6f13ff638889720 a6c2f7c601d057adba3fa09dc4f4a405b8760a28 M	luci-app-ssr-plus/root/usr/share/shadowsocksr/subscribe.lua
+commit d71ea5b4961a44f686de46fa807287867459b9b4
+tree 99bee389f9351e94c43fdb53d7617023bd89f434
+parent 8c8a9083ce1ff24cfbaf06a205d20d9667e818ca
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-08 21:18:13 +0800
+committer GitHub <noreply@github.com> 2024-09-08 21:18:13 +0800
+
+    Fixed a subscription configuration import issue
+    
+    启用 tls 时，无法导入传输协议 ws、httpugrade、HTTP/2、SplitHTTP 路径和 tls 主机名。
+
+:100755 100755 545e0b88e3065d79c21dc29663f698e004fe318a 8102cd3859d824c5f109cbf79a7a62e4d69a7b86 M	luci-app-ssr-plus/root/usr/share/shadowsocksr/gen_config.lua
+commit 8c8a9083ce1ff24cfbaf06a205d20d9667e818ca
+tree 3531e0952130066e3093e1679a8410821450dbc0
+parent 2d28b149d0a144bfdc62bf057a0fce60af2a357f
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-08 21:16:07 +0800
+committer GitHub <noreply@github.com> 2024-09-08 21:16:07 +0800
+
+    Fixed a subscription configuration import issue
+    
+    启用 tls 时，无法导入传输协议 ws、httpugrade、HTTP/2、SplitHTTP 路径和 tls 主机名。
+
+:100644 100644 479d7e2f5aff9a180693a05d191331c183ad8b4d 7603d8c0e544cdc8c85a02096f41170ac2248e48 M	luci-app-ssr-plus/luasrc/view/shadowsocksr/ssrurl.htm
+commit 2d28b149d0a144bfdc62bf057a0fce60af2a357f
+tree b2c26ae0d7ffbf1cdddd4107bda22c7f7820f06b
+parent 293ec12d37a3feed7d39eb9b141f1fcb7faac08f
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-08 21:13:09 +0800
+committer GitHub <noreply@github.com> 2024-09-08 21:13:09 +0800
+
+    Fixed a subscription configuration import issue
+    
+    启用 tls 时，无法导入传输协议 ws、httpugrade、HTTP/2、SplitHTTP 路径和 tls 主机名。
+
+:100644 100644 04871789c2833b429e3b0dc3662df1ed7164e9ad c55e0ff0961bb66a1c872f2cfaafbd83b08d743b M	luci-app-ssr-plus/luasrc/model/cbi/shadowsocksr/client-config.lua
+commit 39fa415f4a8a63198ded42ba129cf9dd8e54bf99
+tree 08f0208ec4fa60c7aa38a95a094380ac5e96789d
+parent 0d165d2c55163c4389836609d0c1448d98434aec
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-03 22:19:28 +0800
+committer GitHub <noreply@github.com> 2024-09-03 22:19:28 +0800
+
+    gn: Update to git HEAD
+
+:100644 100644 30de68f981fa4d0c472300f954b87e8d840bba9d 139b01f23d04201e976588cb14c6acb7f0ce40b3 M	gn/src/out/last_commit_position.h
+commit 0d165d2c55163c4389836609d0c1448d98434aec
+tree 6c13b35c958ff7c7c1247bf6e2521579e69f6e49
+parent 293ec12d37a3feed7d39eb9b141f1fcb7faac08f
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-03 22:18:31 +0800
+committer GitHub <noreply@github.com> 2024-09-03 22:18:31 +0800
+
+    gn: Update to git HEAD
+
+:100644 100644 f3f4fc4502818f4c2adb7474e9898a2a3f2a6720 aa3d09a899847b3f571d7067f36cca52f4e4abd2 M	gn/Makefile
+commit 616f5da4c8889be0543786a062365b0cff30668f
+tree b551fed84931c1f0e1a2ce62d950b5ab543c097f
+parent bcec51f5b3ff5eccc7c5d246d279e36383c92f22
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-01 00:20:20 +0800
+committer GitHub <noreply@github.com> 2024-09-01 00:20:20 +0800
+
+    naiveproxy: update to 128.0.6613.40-1
+
+:100755 100755 f1dc9b7b34fc9ebf9edd0ca14f9b3fee8d4b0b1c 08d3448fe77587fe2d8b58d0c80f7f566495e416 M	naiveproxy/src/init_env.sh
+commit bcec51f5b3ff5eccc7c5d246d279e36383c92f22
+tree 6f66585f234b0c56068e25b81f318d8a60128290
+parent 293ec12d37a3feed7d39eb9b141f1fcb7faac08f
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-09-01 00:18:37 +0800
+committer GitHub <noreply@github.com> 2024-09-01 00:18:37 +0800
+
+    naiveproxy: update to 128.0.6613.40-1
+
+:100644 100644 45528b2df092149f5604d074998dbf80e9521088 92e04f069ca315342b16a2fd453ee8863d1a891d M	naiveproxy/Makefile
+commit bdb993ff7adb66666f9fcb3ad9e781144e66d81c
+tree 059817439bfd325332b830d0fdca572f5a5bc05c
+parent 23e50e7153b06000e4fe27e011cecac031706e9a
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-08-18 13:38:34 +0800
+committer GitHub <noreply@github.com> 2024-08-18 13:38:34 +0800
+
+    chinadns-ng: update to 2024.07.21
+
+:100644 100644 96734225a6edf26c7fe02e864d8e2d624f678cb9 ced8e349f30ecbe19ac3f1e3d47882aac55349d0 M	chinadns-ng/Makefile
+commit 23e50e7153b06000e4fe27e011cecac031706e9a
+tree 1a8190d96cc893745e01c9b70392df812eaacae2
+parent f6600cb131268ef9663a5296cda0dc91c96a8e4e
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-08-17 17:28:04 +0800
+committer GitHub <noreply@github.com> 2024-08-17 17:28:04 +0800
+
+    chinadns-ng: update to 2024.07.21
+
+:100644 100644 8bdd1ffde3491a267f90153199d5113f547c32d2 96734225a6edf26c7fe02e864d8e2d624f678cb9 M	chinadns-ng/Makefile
+commit f6600cb131268ef9663a5296cda0dc91c96a8e4e
+tree e9d7e35d4ee5f25fdd39e68c8dca43219e28df91
+parent 77b4a46011efdd5c43d31c68d7a15eb5ed51721b
+author zxl hhyccc <45259624+zxlhhyccc@users.noreply.github.com> 2024-08-17 16:38:46 +0800
+committer GitHub <noreply@github.com> 2024-08-17 16:38:46 +0800
+
+    chinadns-ng: update to 2024.07.21
+
+:100644 100644 0edbb2114c725a08ed2d52c17709e36c7ad7c8d7 8bdd1ffde3491a267f90153199d5113f547c32d2 M	chinadns-ng/Makefile

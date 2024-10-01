@@ -1,0 +1,64 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.4.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/bhanuprakashm29/java-app.git</url>
+        <credentialsId>bhanuprakashm</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/main</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>docker build -t bhanuprakashm99/java-app:latest .
+echo &quot;$DOCKERHUB_Bhanu0099@&quot; | docker login -u &quot;$DOCKERHUB_bhanuprakashm99&quot; --password-stdin
+docker push bhanuprakashm99/java-app:latest</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <com.nirima.jenkins.plugins.docker.builder.DockerBuilderControl plugin="docker-plugin@1.6.2">
+      <option class="com.nirima.jenkins.plugins.docker.builder.DockerBuilderControlOptionRun">
+        <cloudName></cloudName>
+        <image>docker run -d --name java-app-container -p 8089:8080 bhanuprakashm99/java-app:latest</image>
+        <pullCredentialsId></pullCredentialsId>
+        <dnsString></dnsString>
+        <network></network>
+        <dockerCommand></dockerCommand>
+        <mountsString></mountsString>
+        <environmentsString></environmentsString>
+        <privileged>false</privileged>
+        <tty>false</tty>
+        <hostname></hostname>
+        <user></user>
+        <extraGroupsString></extraGroupsString>
+        <bindPorts></bindPorts>
+        <cgroupParent></cgroupParent>
+        <cpus></cpus>
+        <cpuPeriod>0</cpuPeriod>
+        <cpuQuota>0</cpuQuota>
+        <bindAllPorts>false</bindAllPorts>
+        <macAddress></macAddress>
+      </option>
+    </com.nirima.jenkins.plugins.docker.builder.DockerBuilderControl>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

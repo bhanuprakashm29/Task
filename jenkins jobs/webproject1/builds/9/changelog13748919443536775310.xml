@@ -1,0 +1,10 @@
+commit 89bafac881ebf7bcb3fb984181168f6e486ddbfb
+tree 3e47d4042b1441aeb1c728b6ee96412046ba8ffd
+parent 20c95ec521d3dc3933ec7c447300762f9ae9cb93
+author bhanuprakashm29 <bhanuprakash.m@khyath.com> 2024-09-25 14:29:23 +0530
+committer bhanuprakashm29 <bhanuprakash.m@khyath.com> 2024-09-25 14:29:23 +0530
+
+    updated docker file
+
+
+:100644 100644 1fdb86acbe4c82f93e49b739dc617f5d6517ad16 c23db4ef5deeba5fe344aa405da93cf33eb637ee M	Dockerfile
